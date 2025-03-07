@@ -1,4 +1,4 @@
-# Administration Système Linux - Guide Complet
+# Administration Système Linux
 
 ## Table des matières
 - [1. Gestion des utilisateurs](#1-gestion-des-utilisateurs)
