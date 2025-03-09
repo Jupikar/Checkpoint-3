@@ -8,6 +8,8 @@
 - [5. Filtrage et analyse réseau](#5-filtrage-et-analyse-réseau)
 - [6. Analyse des logs](#6-analyse-des-logs)
 
+---
+
 ## 1. Gestion des utilisateurs
 
 ### Q.2.1.1 Création d'un compte personnel
@@ -25,6 +27,8 @@ sudo adduser julien
 ```bash
 sudo usermod -aG sudo julien
 ```
+
+---
 
 ## 2. Configuration SSH
 
@@ -74,6 +78,8 @@ PubkeyAuthentication yes
 
 ![Capture d’écran 2025-03-07 114925](https://github.com/user-attachments/assets/958102b9-7409-479e-9777-ac1192974204)
 
+
+---
 
 ## 3. Analyse du stockage
 
@@ -183,12 +189,16 @@ sudo vgdisplay cp3-vg
 ![Capture d’écran 2025-03-07 124844](https://github.com/user-attachments/assets/7c69771b-26bb-4b26-bd1d-dfed6719dbd1)
 
 
+---
+
 ## 4. Sauvegardes
 
 ### Q.2.4.1 Composants Bareos
 - **bareos-dir** (Director) : Coordination des sauvegardes
 - **bareos-sd** (Storage Daemon) : Gestion du stockage
 - **bareos-fd** (File Daemon) : Client de sauvegarde
+
+---
 
 ## 5. Filtrage et analyse réseau
 
