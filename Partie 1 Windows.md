@@ -1,11 +1,13 @@
-# Administration Système Windows
+#  🖥️ Administration Système Windows
 
 ## Sommaire
 1. [Gestion des utilisateurs](#1-gestion-des-utilisateurs)
 2. [Restriction utilisateurs](#2-restriction-utilisateurs)
 3. [Lecteurs réseaux](#3-lecteurs-réseaux)
 
-## 1. Gestion des utilisateurs
+---
+
+## 📋 1. Gestion des utilisateurs
 
 ### Q.1.1.1 Création de l'utilisateur Lionel Lemarchand
 1. Ouvrir "Utilisateurs et ordinateurs Active Directory"
@@ -57,7 +59,9 @@
   
 ![Capture d’écran 2025-03-07 095747](https://github.com/user-attachments/assets/95977788-c77d-4211-bb54-cc5bbc9dd48d)
 
-## 2. Restriction utilisateurs
+---
+
+## 2. 🕰️ Restriction utilisateurs
 
 ### Q.1.2.1 Restriction horaire pour Gabriel Ghul
 1. Dans "Utilisateurs et ordinateurs Active Directory"
@@ -96,7 +100,9 @@
 
 ![Capture d’écran 2025-03-07 101757](https://github.com/user-attachments/assets/a1ea954d-1221-40ad-a175-9c87009ec881)
 
-## 3. Lecteurs réseaux
+---
+
+## 3. 💾 Lecteurs réseaux
 
 ### Q.1.3.1 Création de la GPO Drive-Mount
 
