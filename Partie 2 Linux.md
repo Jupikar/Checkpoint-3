@@ -61,14 +61,20 @@ ssh-keygen -t rsa -b 4096
 
 2. Copier la clé publique :
 ```bash
-scp $env:USERPROFILE\.ssh\id_rsa.pub user@server:~/.ssh/authorized_keys
+type $env:USERPROFILE\.ssh\id_rsa.pub | ssh user@server "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
 ```
 
 ![Capture d’écran 2025-03-07 113548](https://github.com/user-attachments/assets/cf052d3f-8147-4db5-97dc-eb6fb03dad56)
 
 ![Capture d’écran 2025-03-07 113712](https://github.com/user-attachments/assets/c903d869-4c5e-48c6-8ba8-a3e30ddf57ec)
 
+Explications des différentes parties :
 
+- type $env:USERPROFILE\.ssh\id_rsa.pub : lit le contenu de votre clé publique SSH (équivalent de cat sous Linux)
+- $env:USERPROFILE : représente le chemin vers votre dossier utilisateur Windows
+- ssh user@server : connexion SSH vers le serveur distant (remplacez user par votre nom d'utilisateur et server par l'adresse IP ou le nom d'hôte)
+- mkdir -p ~/.ssh : crée le dossier .ssh s'il n'existe pas
+- cat >> ~/.ssh/authorized_keys : ajoute la clé au fichier authorized_keys
 
 3. Désactiver l'authentification par mot de passe dans `/etc/ssh/sshd_config` :
 ```bash
