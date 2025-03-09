@@ -1,4 +1,4 @@
-# Administration Système Linux
+# 🐧 Administration Système Linux
 
 ## Table des matières
 - [1. Gestion des utilisateurs](#1-gestion-des-utilisateurs)
@@ -10,7 +10,7 @@
 
 ---
 
-## 1. Gestion des utilisateurs
+## 🪪 1. Gestion des utilisateurs
 
 ### Q.2.1.1 Création d'un compte personnel
 ```bash
@@ -30,7 +30,7 @@ sudo usermod -aG sudo julien
 
 ---
 
-## 2. Configuration SSH
+## 🔑 2. Configuration SSH
 
 ### Q.2.2.1 Désactivation de l'accès root
 Éditer `/etc/ssh/sshd_config` :
@@ -87,7 +87,7 @@ PubkeyAuthentication yes
 
 ---
 
-## 3. Analyse du stockage
+## 💽 3. Analyse du stockage
 
 ### Q.2.3.1 Systèmes de fichiers montés
 ```bash
@@ -155,7 +155,7 @@ Résultats :
 
 ### Q.2.3.4 Ajout volume logique LVM
 
-# Identifiez l'espace disponible dans le groupe de volumes LVM avec :
+#### Identifiez l'espace disponible dans le groupe de volumes LVM avec :
    ```bash
    vgdisplay
    ```
@@ -163,7 +163,7 @@ Résultats :
 ![Capture d’écran 2025-03-07 124917](https://github.com/user-attachments/assets/54a7c011-ed39-49f7-b00b-fa28ce9a2f28)
 
 
-# Création du volume logique
+#### Création du volume logique
 ```bash
 sudo lvcreate -L 2G -n storage cp3-vg
 ```
@@ -171,14 +171,14 @@ sudo lvcreate -L 2G -n storage cp3-vg
 ![Capture d’écran 2025-03-07 164004](https://github.com/user-attachments/assets/53eaba59-7bf1-40a7-a7ef-99a2f6d594e1)
 
 
-# Formatage
+#### Formatage
 ```bash
 sudo mkfs.ext4 /dev/cp3-vg/storage
 ```
 
 ![Capture d’écran 2025-03-07 164103](https://github.com/user-attachments/assets/23b081f7-c2ae-4aa4-8bab-b7fd1064f027)
 
-# Montage
+#### Montage
 ```bash
 sudo mkdir -p /var/lib/bareos/storage
 echo "/dev/cp3-vg/sauvegardes /var/lib/bareos/storage ext4 defaults 0 2" | sudo tee -a /etc/fstab
@@ -197,7 +197,7 @@ sudo vgdisplay cp3-vg
 
 ---
 
-## 4. Sauvegardes
+## 🗃️ 4. Sauvegardes
 
 ### Q.2.4.1 Composants Bareos
 - **bareos-dir** (Director) : Coordination des sauvegardes
@@ -206,7 +206,7 @@ sudo vgdisplay cp3-vg
 
 ---
 
-## 5. Filtrage et analyse réseau
+## 📡5. Filtrage et analyse réseau
 
 ### Q.2.5.1 Configuration nftables actuelle
 ```bash
@@ -272,7 +272,7 @@ table inet inet_filter_table {
 ![Capture d’écran 2025-03-07 132801](https://github.com/user-attachments/assets/25f9488a-3673-4356-9013-6dd41b450723)
 
 
-## 6. Analyse des logs
+## 📰 6. Analyse des logs
 
 ### Q.2.6.1 Analyse des échecs de connexion
 Commande utilisée :
