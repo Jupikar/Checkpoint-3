@@ -10,7 +10,7 @@
 
 ---
 
-## 🪪 1. Gestion des utilisateurs
+## 1. Gestion des utilisateurs
 
 ### Q.2.1.1 Création d'un compte personnel
 ```bash
@@ -30,7 +30,7 @@ sudo usermod -aG sudo julien
 
 ---
 
-## 🔑 2. Configuration SSH
+## 2. Configuration SSH
 
 ### Q.2.2.1 Désactivation de l'accès root
 Éditer `/etc/ssh/sshd_config` :
@@ -87,7 +87,7 @@ PubkeyAuthentication yes
 
 ---
 
-## 💽 3. Analyse du stockage
+## 3. Analyse du stockage
 
 ### Q.2.3.1 Systèmes de fichiers montés
 ```bash
@@ -197,7 +197,7 @@ sudo vgdisplay cp3-vg
 
 ---
 
-## 🗃️ 4. Sauvegardes
+## 4. Sauvegardes
 
 ### Q.2.4.1 Composants Bareos
 - **bareos-dir** (Director) : Coordination des sauvegardes
@@ -272,7 +272,7 @@ table inet inet_filter_table {
 ![Capture d’écran 2025-03-07 132801](https://github.com/user-attachments/assets/25f9488a-3673-4356-9013-6dd41b450723)
 
 
-## 📰 6. Analyse des logs
+## 6. Analyse des logs
 
 ### Q.2.6.1 Analyse des échecs de connexion
 Commande utilisée :
